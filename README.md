@@ -32,6 +32,7 @@ A unit test would have been nice, but I started 5 hours late due to a shitty dep
 ## APIs
 
 **POST /user - Registers a user**
+
 BODY: JSON
 Data:
     {
@@ -57,6 +58,7 @@ Returns:
     }
 ---
 **POST /login - Logins a user**
+
 BODY: JSON
 Data:
  
@@ -77,6 +79,7 @@ Returns: JWT Authorization token. Needed to access protected APIs
     }
 ---
 **GET /user - Gets user information and record of borrowed books**
+
 HEADERS:
 - Authorization: Bearer < TOKEN >
 
@@ -133,6 +136,7 @@ Returns: User info and record
     }
 ---
 **POST /books - Adds a book**
+
 BODY: JSON
 Data:
 
@@ -161,6 +165,7 @@ Returns: Successful addition of book
     }
 ---
 **GET /books - Gets Book info**
+
 PARAMS: 
 - name: book name. Exact name but case insensitive
 - isbn: Exact ISBN Number
@@ -184,6 +189,7 @@ Returns: Book List
     nothingness","createdAt":"2020-08-11T21:02:05.524Z","updatedAt":"2020-08-11T21:02:05.524Z","__v":0}]
 ---
 **UPDATE /books - Updates Book info**
+
 BODY: JSON 
 Data:
 
@@ -214,6 +220,7 @@ Returns:
     }
 ---
 **DELETE /books - Updates Book info**
+
 PARAMS: 
 - ID: Id of the book you want to delete
 
@@ -229,6 +236,7 @@ Returns:
     }
 ---
 **POST books/borrow - Borrows a book**
+
 HEADERS:
 - Authorization: Bearer < TOKEN >
 BODY: JSON 
@@ -253,6 +261,7 @@ Returns:
     
 ---
 **POST books/return - Returns a book**
+
 HEADERS:
 - Authorization: Bearer < TOKEN >
 BODY: JSON 
