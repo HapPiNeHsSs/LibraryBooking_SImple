@@ -3,11 +3,6 @@
 
 # Simple Library System
 
-DEPLOYMENT
-
-Prerequisites: 
--Node v12.16.1
--MongoDB
 
 Configuration Variables are inside the **.env** file on the root directory
 
@@ -23,6 +18,10 @@ Config Contents:
 
 LOG_PATH can be omitted and will just default to log
 
+Logs are handled by Morgan on the express side, so most requests are logged both in console and the logfile.
+
+For Other logging purposses, winston and a smattering of console.logs are used.
+
 Passport handles Authentication with JWT for the strategy, so some extra steps when you test. The login api will provide the JWT token, as is common.
 
 Mongoose handles the database connection.
@@ -32,6 +31,13 @@ Pretty thread safe and can be used concurrently by multiple users.
 For testing purposes, I have prepared a postman collection under the postmanCollection directory. I used this to test functionalites. 
 
 A unit test would have been nice, but I started 5 hours late due to a shitty deployment for a client (s.n.tel ..save me).
+
+## DEPLOYMENT
+
+**Prerequisites: **
+-Node v12.16.1
+-MongoDB
+
 
 run '**npm install**' to install the packages
 
