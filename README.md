@@ -17,7 +17,10 @@ Config Contents:
     SECRET_TOKEN=secret
     MAX_BORROW=5
     DURATION=30
-    LOG_PATH
+    LOG_PATH=log
+
+LOG_PATH can be omitted and will just default to log
+Uses JWT for authentication, so some extra steps when you test. The login api will provide the JWT token, as is common.
 
 run '**npm install**' to install the packages
 run '**node app.js**' to run the service
