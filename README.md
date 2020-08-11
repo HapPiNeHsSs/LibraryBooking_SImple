@@ -141,6 +141,7 @@ Returns: User info and record
 **POST /books - Adds a book**
 
 BODY: JSON
+
 Data:
 
       {
@@ -197,6 +198,7 @@ Returns: Book List
 **UPDATE /books - Updates Book info**
 
 BODY: JSON 
+
 Data:
 
     {
@@ -247,7 +249,9 @@ Returns:
 
 HEADERS:
 - Authorization: Bearer < TOKEN >
+
 BODY: JSON 
+
 Data:
 
     {"book_id":2 }
@@ -273,7 +277,9 @@ Returns:
 
 HEADERS:
 - Authorization: Bearer < TOKEN >
+
 BODY: JSON 
+
 Data:
 
  
