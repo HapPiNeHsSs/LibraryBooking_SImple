@@ -22,14 +22,23 @@ Config Contents:
     LOG_PATH=log
 
 LOG_PATH can be omitted and will just default to log
-Uses JWT for authentication, so some extra steps when you test. The login api will provide the JWT token, as is common.
+
+Passport handles Authentication with JWT for the strategy, so some extra steps when you test. The login api will provide the JWT token, as is common.
+
+Mongoose handles the database connection.
+
+Pretty thread safe and can be used concurrently by multiple users.
+
+For testing purposes, I have prepared a postman collection under the postmanCollection directory. I used this to test functionalites. 
+
+A unit test would have been nice, but I started 5 hours late due to a shitty deployment for a client (s.n.tel ..save me).
 
 run '**npm install**' to install the packages
 
 run '**node app.js**' to run the service
 
-For testing purposes, I have prepared a postman collection under the postmanCollection directory. I used this to test functionalites. 
-A unit test would have been nice, but I started 5 hours late due to a shitty deployment for a client (s.n.tel ..save me).
+
+
 **
 
 ## APIs
