@@ -22,6 +22,8 @@ Config Contents:
 run '**npm install**' to install the packages
 run '**node app.js**' to run the service
 
+For testing purposes, I have prepared a postman collection under the postmanCollection directory. I used this to test functionalites. 
+A unit test would have been nice, but I started 5 hours late due to a shitty deployment for a client (s.n.tel ..save me).
 **
 
 ## APIs
