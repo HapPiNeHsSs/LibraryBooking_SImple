@@ -47,6 +47,7 @@ Data:
    Notes: Name can be a duplicate, user_id cannot
    
 Errors: Will throw errors for parse failures, missing params, and duplicate user_id
+
 Returns:
 
     {
@@ -68,6 +69,7 @@ Data:
   
    
 Errors: Will throw errors for Unauthorized and missing Params
+
 Returns: JWT Authorization token. Needed to access protected APIs
 
        {
@@ -84,6 +86,7 @@ HEADERS:
 - Authorization: Bearer < TOKEN >
 
 Errors: Will throw errors for Unauthorized
+
 Returns: User info and record
 
 	{
@@ -155,7 +158,9 @@ Data:
     }
 
  Note: ISBN and Name can be duplicates. ID is auto incremented at the backend
+ 
 Errors: Will throw errors for missing Params and parse errors
+
 Returns: Successful addition of book
 
        {
@@ -171,6 +176,7 @@ PARAMS:
 - isbn: Exact ISBN Number
 
 Note: ISBN and Name will be used as an AND filter. Omitting both will show all books
+
 Returns: Book List
    
 
@@ -209,6 +215,7 @@ Data:
     
     }
 Note that the ID param is required. WIll throw an error if omitted.
+
 The other parameters are optional, you can update only what you want
 
 Returns: 
@@ -225,6 +232,7 @@ PARAMS:
 - ID: Id of the book you want to delete
 
 Note that the ID param is required. WIll throw an error if omitted.
+
 The other parameters are optional, you can update only what you want
 
 Returns: 
@@ -245,6 +253,7 @@ Data:
     {"book_id":2 }
 
 Authenticated User Only. Borrows a book
+
 Errors: Checks if book is actually present. Throws error if MAX_BORROW is exceeded, Throws missing params errors
 
 Returns: 
@@ -272,6 +281,7 @@ Data:
        {"borrow_id":2 }
 
 Authenticated User Only. Returns a book
+
 Errors: Checks if book was actually borrowed. Throws missing params errors
 
 Returns: 
