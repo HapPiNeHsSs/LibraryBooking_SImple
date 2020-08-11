@@ -20,7 +20,7 @@ LOG_PATH can be omitted and will just default to log
 
 Logs are handled by Morgan on the express side, so most requests are logged both in console and the logfile.
 
-For Other logging purposses, winston and a smattering of console.logs are used.
+For Other logging purposes, Winston and a smattering of console.logs are used.
 
 Passport handles Authentication with JWT for the strategy, so some extra steps when you test. The login api will provide the JWT token, as is common.
 
